@@ -1,0 +1,14 @@
+applications:
+- name: simple-watsonml-wrapper
+  instances: 1
+  memory: 1G
+  # routes:
+  # - route: watsonml
+  path: .
+  command: node app.js
+  env:
+    ML_URL:
+    ML_USERNAME:
+    ML_PASSWORD:
+    SCORING_URL:
+    MONGODB_URL:
